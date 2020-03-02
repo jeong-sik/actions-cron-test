@@ -2,9 +2,10 @@ name: CI
 
 on: 
   schedule:
-    - cron: '*/6 * * * *'
+    - cron: '*/10 * * * *'
 
 jobs:
+  name: CRON TEST
   build:
 
     runs-on: ubuntu-latest
