@@ -1,13 +1,14 @@
 name: CI
 
 on: 
+  repository_dispatch:
+    types: LHCI
   schedule:
-    - cron: '* * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   name: CRON TEST
   build:
-
     runs-on: ubuntu-latest
 
     steps:
